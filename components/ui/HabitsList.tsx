@@ -85,7 +85,7 @@ export default function HabitsList({ habits, todayProgress, isLoading, onRefresh
     <View className="mt-6">
       <View className="flex-row items-center justify-between px-5 mb-4">
         <Text className="text-[22px] font-OpenSansBold text-gray-800">
-          Your Habits
+          Quests
         </Text>
         <TouchableOpacity
           className="bg-[#6C63FF] p-2 rounded-full"

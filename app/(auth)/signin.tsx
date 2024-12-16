@@ -56,7 +56,7 @@ const Signup = () => {
         console.log('Signin pressed');
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            // Auth state change will automatically redirect user
+            router.replace('/(tabs)/analytics');
         } catch (error) {
             console.error('Error during signIn:', error);
             // Handle error

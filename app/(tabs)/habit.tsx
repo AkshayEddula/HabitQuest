@@ -231,19 +231,21 @@ export default function AddHabit() {
                       onPress={() => handleIconSelect(icon.name)}
                       style={{
                         backgroundColor: selectedIcon === icon.name
-                          ? selectedColor + '20'
-                          : '#F1F5F9'
+                          ? `${selectedColor}20`
+                          : '#F1F5F9',
                       }}
-                      className="w-16 h-16 rounded-2xl mr-3 items-center justify-center"
+                      className="w-14 h-14 rounded-full mr-3 items-center justify-center"
                     >
-                      <Ionicons
-                        name={icon.name as any}
-                        size={28}
-                        color={selectedIcon === icon.name ? selectedColor : '#64748B'}
-                      />
-                      <Text className="text-[10px] font-OpenSans mt-1 text-gray-600">
-                        {icon.label}
-                      </Text>
+                      <View className="items-center">
+                        <Ionicons
+                          name={icon.name as any}
+                          size={24}
+                          color={selectedIcon === icon.name ? selectedColor : '#64748B'}
+                        />
+                        <Text className="text-[10px] font-OpenSans mt-1 text-gray-600">
+                          {icon.label}
+                        </Text>
+                      </View>
                     </TouchableOpacity>
                   ))}
                 </ScrollView>
